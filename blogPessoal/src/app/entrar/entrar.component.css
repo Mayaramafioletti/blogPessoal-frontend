@@ -1,0 +1,14 @@
+.cor-bg{
+  background-image: linear-gradient(to bottom, white, rgb(0, 0, 0));
+}
+
+.forma{
+  width: 80%;
+}
+.centro{
+  margin-left: 100px;
+}
+
+#bg-centro{
+  margin-top: 120px;
+}
