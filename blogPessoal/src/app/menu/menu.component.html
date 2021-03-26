@@ -2,22 +2,25 @@
 
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav mr-auto d-flex align-items-center">
-       <li class="nav-item active">
-            <img src="assets/img/Foto.jpg" alt="Imagem do user" width="60px" height="60px" class="img-fluid rounded-circle">
-        </li>
         <li class="nav-item dropdown">
           <a class="nav-link  text-light m-0 font-weight-light fs-16" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Nome do Usuário
+            <img class="mr-3" src="{{foto}}" alt="Imagem do user" width="60px" height="60px" class="img-fluid rounded-circle">
+
+         Olá, {{nome}}
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <div class="d-flex align-items-center ">
-              <a class="dropdown-item" href="#">Perfil</a>
-            <i class="fa fa-pencil-square-o mr-5" aria-hidden="true"></i>
+              <a class="dropdown-item" href="#">
+                Perfil
+                 <i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+
             </div>
             <div class="dropdown-divider"></div>
             <div class="d-flex align-items-center ">
-              <a class="dropdown-item" href="#">Sair</a>
-              <i class="fa fa-sign-out mr-5" aria-hidden="true"></i>
+              <a (click)='sair()' class="dropdown-item" href="#">
+                Sair
+                <i class="fa fa-sign-out " aria-hidden="true"></i></a>
+
             </div>
 
 
@@ -28,11 +31,11 @@
 
       <ul class="navbar-nav ml-auto d-flex align-items-center">
         <li class="nav-item pl-3">
-          <a> <img src="assets/img/logoSemFundo.png" alt="Logo da criadora" width="180px" height="165px"></a>
+          <a class="mr-3"> <img src="assets/img/logoSemFundo.png" alt="Logo da criadora" width="120px" height="105px"></a>
       </li>
       </ul>
     </div>
 
 
-    
+
   </nav>

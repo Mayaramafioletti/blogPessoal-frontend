@@ -1,0 +1,7 @@
+.background{
+  background-color:#808080;
+  background-image: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.5));
+  }
+.fs-48{
+  font-size: 50px;
+}
