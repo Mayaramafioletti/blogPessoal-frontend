@@ -9,8 +9,8 @@
          Olá, {{nome}}
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <div class="d-flex align-items-center ">
-              <a class="dropdown-item" href="#">
+            <div class="d-flex align-items-center " [routerLink]="['user-edit',id]">
+              <a class="dropdown-item">
                 Perfil
                  <i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
 
