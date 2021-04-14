@@ -1,3 +1,4 @@
+import { AlertasService } from './../service/alertas.service';
 import { CadastrarComponent } from './../cadastrar/cadastrar.component';
 import { TemaService } from './../service/tema.service';
 import { Tema } from './../model/Tema';
@@ -17,7 +18,8 @@ export class TemaComponent implements OnInit {
 
   constructor(
     private router: Router,
-    private temaService: TemaService
+    private temaService: TemaService,
+    private alertas: AlertasService
 
   ) { }
 
@@ -25,6 +27,11 @@ export class TemaComponent implements OnInit {
 
     if(environment.token == ''){
       this.router.navigate (['/entrar'])
+    }
+
+    if(environment.tipo != 'adm'){
+      this.alertas.showAlertDanger('Você não tem permição para acessar essa rota')
+      this.router.navigate(['/inicio'])
     }
 
     this.findAllTemas()
